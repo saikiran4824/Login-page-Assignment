@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Main -->
+  <div class="h-screen flex items-center justify-center bg-gradient-to-r from-cyan-600 to-pink-900">
+    <div class="flex flex-wrap w-full max-w-screen-xl justify-center items-stretch">
+
+      <!-- Left-side gradient card (hidden on small screens) -->
+      <div class="hidden sm:flex w-full sm:w-1/2 justify-center items-center ">
+        <div class="bg-gradient-to-r from-pink-900 to-cyan-600 w-full h-full py-28 p-42 flex justify-center items-center rounded-l-3xl  shadow-2xl">
+          <div class="w-40 h-40 sm:w-48 sm:h-48 text-center rounded-full py-10 bg-white flex justify-center items-center">
+            <h1 class="text-4xl sm:text-5xl font-thin text-cyan-600">SL Dev</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Right-side login card -->
+      <div class="flex w-full sm:w-1/2 justify-center items-center">
+        <div class="bg-white w-full h-full   sm:rounded-r-3xl sm:m-0 m-6 p-10 shadow-2xl">
+          <h2 class="text-4xl sm:text-6xl font-extralight text-pink-950 mt-10 mb-4 text-center">Login</h2>
+          <p class="pb-4 sm:pb-8 text-center text-xs font-serif">Enter the below details to login</p>
+          <form class="grid justify-center items-center" >
+            <div class="relative mb-4 justify-center items-center ">
+              <input type="text" id="username" placeholder="Username" class="pl-10  py-2 border border-gray-400 rounded-md">
+              <i class="fa-solid fa-user absolute top-3 left-3 text-gray-700"></i>
+            </div>
+            <div class="relative mb-4">
+              <input type="password" id="password" placeholder="Password" class="pl-10  py-2 border border-gray-400 rounded-md">
+              <i class="fa-solid fa-lock absolute top-3 left-3 text-gray-700"></i>
+            </div>
+            <div class=" justify-between items-center pb-4 text-center text-xs font-serif ">
+              <p  class="pr-7">Having trouble signing in?<br> Forgot Password? </p>
+            </div>
+            <button type="submit" class="bg-pink-900 text-white py-2  mb-10 rounded">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+</body>
+</html>
